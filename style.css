@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box; 
+  font-family: 'Kaushan Script',
+  cursive;
+}
+body{
+ 
+background: #FC354C;
+background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+.calculator-grid{
+    animation: tada;
+    animation-duration: 2.5s;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  min-height:100vh;
+  grid-template-columns: repeat(4,90px);
+  grid-template-rows: minmax(100px,auto) repeat(5,90px);
+
+}
+.calculator-grid button{
+  cursor: pointer;
+  font-size: 2rem;
+  outline:none;
+  border:1px solid #fff;
+  transition:all 0.4s ease;
+background: #EC6F66;
+background: linear-gradient(to right, #F3A183, #EC6F66);
+
+
+}
+.calculator-grid button:hover{
+box-shadow: 0 10px 15px rgb(0, 0, 0);
+background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+.span-two{
+  grid-column: span 2;
+}
+.output{
+  grid-column: 1/-1;
+  background: rgba(238, 11, 98, 0.3);
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction:column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border:2px solid #2a16e6;
+}
+.output .prevous-number {
+color:rgba(255,255,255,0.75);
+font-size: 1.5rem;
+}
+.output .current-number {
+color:#fff;
+font-size: 2.5rem;
+}
+h1{
+  text-align:center;
+  margin: 2rem 0;
+  animation: bounceInLeft;
+  animation-duration: 2.5s;
+  margin-top: 3rem;
+}
+.title{
+    animation: bounceInRight;
+    animation-duration: 2.5s;
+    color: #b6fc35;
+}
+.header{
+  min-height: 100vh;
+ background: #E55D87;
+ background: linear-gradient(to right, #5FC3E4, #E55D87);
+
+
+}
